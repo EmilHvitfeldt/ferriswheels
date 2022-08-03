@@ -1,0 +1,44 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# ferriswheels <img src="man/figures/logo.gif" align="right" height="139" />
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of ferriswheels is to provide a fun harmless little data set to play with
+
+## Installation
+
+You can install the development version of ferriswheels like so:
+
+``` r
+remotes::install_github("emilhvitfeldt/elevators")
+```
+
+## Example
+
+```{r example}
+library(ferriswheels)
+str(wheels)
+```
+```{r, warning=FALSE}
+library(ggplot2)
+
+wheels |>
+  ggplot(aes(height, diameter, color = number_of_cabins)) +
+  geom_point()
+```
+
