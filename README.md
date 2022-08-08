@@ -14,7 +14,7 @@ play with
 You can install the development version of ferriswheels like so:
 
 ``` r
-remotes::install_github("emilhvitfeldt/elevators")
+remotes::install_github("emilhvitfeldt/ferriswheels")
 ```
 
 ## Example
