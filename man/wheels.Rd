@@ -5,7 +5,7 @@
 \alias{wheels}
 \title{Ferris Wheels}
 \format{
-A data frame with 73 rows and 21
+A data frame with 74 rows and 21
 variables:
 
 \describe{

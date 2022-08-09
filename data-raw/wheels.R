@@ -68,4 +68,30 @@ wheels <- wheels |>
   mutate(ride_duration_minutes = ifelse(ride_duration_minutes == 0, NA, ride_duration_minutes)) %>%
   select(-ride_duration)
 
+# https://en.wikipedia.org/wiki/Capital_Wheel
+wheels <- wheels |>
+  add_row(
+    name = "Capital Wheel",
+    height = 175,
+    diameter = 165,
+    opened = lubridate::ymd("2014-05-23"),
+    closed = NA,
+    country = "USA",
+    location = "National Harbor, Maryland",
+    number_of_cabins = 42,
+    passengers_per_cabin = 8,
+    seating_capacity = 42 * 8,
+    hourly_capacity = NA,
+    ride_duration_minutes = 15,
+    climate_controlled = "sometimes",
+    construction_cost = NA,
+    status = "Operating",
+    design_manufacturer = "CWA Construction",
+    type = NA,
+    vip_area = "Yes",
+    ticket_cost_to_ride = "$15 for adults, $13.50 for seniors, and $11.25 for children",
+    official_website = "https://thecapitalwheel.com/",
+    turns = NA
+  )
+
 usethis::use_data(wheels, overwrite = TRUE)
