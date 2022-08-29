@@ -19,7 +19,7 @@ remotes::install_github("emilhvitfeldt/ferriswheels")
 
 ## Example
 
-This data set contains a number of interesting variables yo play with.
+This data set contains a number of interesting variables to play with.
 
 ``` r
 library(ferriswheels)
