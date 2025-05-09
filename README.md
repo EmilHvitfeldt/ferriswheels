@@ -1,9 +1,10 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# ferriswheels <img src="man/figures/logo.gif" align="right" height="139" />
+# ferriswheels <img src="man/figures/logo.png" align="right" height="139" alt="" />
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 The goal of ferriswheels is to provide a fun harmless little data set to
@@ -109,6 +110,13 @@ carts <- selected_complete_wheels |>
     cart_color = as.character(cart %% 3),
     .groups = "drop"
   )
+#> Warning: Returning more (or less) than 1 row per `summarise()` group was deprecated in
+#> dplyr 1.1.0.
+#> ℹ Please use `reframe()` instead.
+#> ℹ When switching from `summarise()` to `reframe()`, remember that `reframe()`
+#>   always returns an ungrouped data frame and adjust accordingly.
+#> Call `lifecycle::last_lifecycle_warnings()` to see where this warning was
+#> generated.
 
 selected_complete_wheels |>
   ggplot() +
